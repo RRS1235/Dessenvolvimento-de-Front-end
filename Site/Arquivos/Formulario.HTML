@@ -11,22 +11,22 @@
     <table> <!-- Tabela -->
         <tr>
             <td class="tab_from">
-                <form action="" method="post" onsubmit="contato.Enviar()">
+                <form action="" method="post" onsubmit="contato.Enviar(event)">
 
                     <label for="nome">Escreva seu nome completo</label>
-                    <input type="text" name="name" id="nome" required minlength="8" maxlength="50">
+                    <input type="text" name="name" id="nome" class="inINf" required minlength="8" maxlength="50">
                     
                     <label for="email">Escreva seu email</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" class="inINf" required>
                     
                     <label for="fone">Telefone</label>
-                    <input type="text" name="fone" id="fone" required>
+                    <input type="text" name="fone" id="fone" class="inINf" required>
                     
                     <label for="mensagem">Escreva sua mensagem</label>
                     <textarea id="w3review" name="w3review" rows="4" cols="50" required> Escreva seu comentario</textarea>
                     
                     <label for="idade">Qual sua idade</label>
-                    <input type="numerico" name="idade" id="idade">
+                    <input type="numerico" name="idade" id="idade" class="inINf">
                     
                     <label for="contato">Contato</label>
                     <input type="text" name="tp_contato" id="contato">
@@ -55,7 +55,7 @@
                         <th>Edit/del</th>
                     </tr>
                 </thead>
-                <tbody> <!-- Corpo da tabela -->
+                <!-- <tbody> Corpo da tabela
                     <tr>
                         <td class="campo"></td>
                         <td class="campo"></td>
@@ -67,7 +67,7 @@
                             <input type="text" name="delete" id="delete">
                         </td>
                     </tr>
-                </tbody>
+                </tbody> -->
                 </table>
             </td>
         </tr>
