@@ -1,28 +1,47 @@
-body {
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    min-height: 100vh; /* Altura mínima da tela */
-    
-    background-color: rgb(49, 49, 49);
+    width: 100%;
 }
 
-button {
-    border-radius: 20px; /* Aredonda as bordas*/
-    width: 70px; 
-    height: 30px;
-    
+.form-container {
+    flex: 20px;
+    padding-right: 20px; /* Adiciona um espaço entre as duas partes */
+}
+.grid-container {
+    flex: 1;
+}
+.inINf {
+    width: calc(100% - 16px); /* Ajusta a largura dos inputs */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.botao {
+    padding: 10px 15px;
+    margin-right: 10px;
 }
 table {
-    margin: 0 auto;
-    border: 10px;
-    border-color: black;
-    border-collapse: collapse;
-    max-width: 900px;
     width: 100%;
-    background-color: rgba(59, 55, 77, 0.979);
+    border-collapse: collapse;
 }
-.tab_from, .tab_grid {
-    padding: 60px;
-    vertical-align: top;
+th, td {
+    border: 2px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+.edt_del_inputs {
+    width: calc(50% - 5px); /* Ajusta a largura dos inputs de edição/deleção */
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 5px;
 }
