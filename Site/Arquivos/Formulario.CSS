@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Altura mínima da tela */
+    
+    background-color: rgb(49, 49, 49);
+}
+
+button {
+    border-radius: 20px; /* Aredonda as bordas*/
+    width: 70px; 
+    height: 30px;
+    
+}
+table {
+    margin: 0 auto;
+    border: 10px;
+    border-color: black;
+    border-collapse: collapse;
+    max-width: 900px;
+    width: 100%;
+    background-color: rgba(59, 55, 77, 0.979);
+}
+.tab_from, .tab_grid {
+    padding: 60px;
+    vertical-align: top;
+}
