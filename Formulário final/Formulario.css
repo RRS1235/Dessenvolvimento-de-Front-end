@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh; 
+}
+
+table {
+    width: 90%; 
+    max-width: 1200px; 
+    border-collapse: separate; 
+    border-spacing: 0; 
+    background-color: #2e2e4e; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+.tabForm, .tabGrid {
+    padding: 30px; 
+    vertical-align: top; 
+}
+
+.tabForm {
+    width: 40%;
+    border-right: 1px solid #3a3a5e; 
+}
+
+.tabGrid {
+    width: 60%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: -10px;
+    font-weight: bold;
+    color: #c0c0c0;
+}
+
+.inINf, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 5px;
+    border: 1px solid #5a5a7e;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 1em;
+    background-color: #3e3e5e;
+    color: #e0e0e0;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.inINf:focus, textarea:focus {
+    border-color: #6a9bd8;
+    background-color: #4e4e6e;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #c0c0c0;
+}
+
+
+.bot {
+    background-color: #6a9bd8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 1em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bot:hover {
+    background-color: #4e7ebf;
+    transform: translateY(-2px); 
+}
+
+.bot[type="reset"] {
+    background-color: #7f8c8d;
+}
+
+.bot[type="reset"]:hover {
+    background-color: #6c7a89;
+}
+
+#tabGrid {
+    overflow-x: auto;
+}
+
+#tabGrid table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    margin-top: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+#tabGrid th, #tabGrid td {
+    border: 1px solid #3a3a5e;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 0.9em;
+    color: #e0e0e0;
+}
+
+#tabGrid thead {
+    background-color: #3e3e5e;
+}
+
+#tabGrid th {
+    font-weight: bold;
+    color: #c0c0c0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px; 
+}
+
+#tabGrid tbody tr:nth-child(even) {
+    background-color: #343454;
+}
+#tabGrid tbody tr:nth-child(odd) {
+    background-color: #2e2e4e;
+}
+
+#tabGrid td button {
+    padding: 6px 10px;
+    font-size: 0.85em;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#tabGrid td button:first-of-type {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#tabGrid td button:first-of-type:hover {
+    background-color: #27ae60;
+}
+
+#tabGrid td button:last-of-type {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#tabGrid td button:last-of-type:hover {
+    background-color: #c0392b;
+}
+
+.edt_del_inputs {
+    width: calc(50% - 5px);
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #5a5a7e;
+    border-radius: 3px;
+    background-color: #3e3e5e;
+    color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    table {
+        flex-direction: column;
+        width: 98%;
+    }
+
+    .tabForm, .tabGrid {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #3a3a5e;
+        padding-bottom: 20px;
+    }
+
+    .tabGrid {
+        border-bottom: none;
+    }
+  
+    .bot {
+        width: calc(50% - 5px);
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .bot:last-of-type {
+        margin-left: 10px;
+    }
+
+    #tabGrid {
+        overflow-x: auto; 
+    }
+
+    body {
+        font-size: 0.9em;
+    }
+    #tabGrid th, #tabGrid td {
+        font-size: 0.8em;
+        padding: 8px 10px; 
+    }
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 15px;
+    transform: scale(1.1); 
+    accent-color: #6a9bd8;
+}
