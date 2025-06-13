@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário de contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        
+        <tr>
+
+            <td class="tabForm">
+                <form action="" method="post" onsubmit="contato.enviar(event)">
+                    <br>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="inINf" required minlength="8" maxlength="200" value="Teste de @">                  
+                    <br>
+                    <label for="gmail">Gmail</label>
+                    <input type="email" name="gmail" id="gmail" class="inINf" required value="a@gmail.com">                   
+                    <br>
+                    <label for="phone">Telefone</label>
+                    <input type="tel" name="phone" id="phone" class="inINf" required value="12313231313132">
+                    <br>
+                    <label for="mensagem">Mensagem</label>                    
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+                    <br>
+                    <label for="idade">Idade</label>
+                    <input type="number" name="idade" id="idade" class="inINf" >
+                    <br>
+                    <p>Tipo de contato: </p>
+                    <label for="whatsapp_cont">whatsapp</label>
+                    <input type="radio" name="tipo_contato" id="whatsapp_cont" value="whatsapp">
+                    <label for="discord_cont">Discord</label>
+                    <input type="radio" name="tipo_contato" id="discord_cont" value="discord">
+                    <label for="email_cont">email</label>
+                    <input type="radio" name="tipo_contato" id="email_cont" value="email">
+                    <br>    
+                    <button type="submit" class="bot">Enviar</button>
+                    <button type="reset" class="bot">Limpar</button>
+                </form>
+            </td>
+
+            <td class="tabGrid" id="tabGrid">
+                <table>
+                    <thead class="cabInf" id="cabInf">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Gmail</th>
+                            <th>Phone</th>
+                            <th>Mensagem</th>
+                            <th>Idade</th>
+                            <th>método de contato</th>
+                            <th>Edit/del</th>
+                       </tr>
+                    </thead>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
