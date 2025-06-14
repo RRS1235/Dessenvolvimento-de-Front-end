@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    border-radius: 25px;
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid rgb(45, 0, 128);
+    padding: 30px;
+    margin: 20px;
+}
+button{
+    border-radius: 25px;
+    border: none;
+    padding: 15px;
+    background-color: dodgerblue;
+    color: white;
+} 
